@@ -21,6 +21,7 @@ public class DownloadFile {
 		driver.manage().window().maximize();
 		driver.get("https://the-internet.herokuapp.com/download");
 		driver.findElement(By.xpath("//a[contains(text(),'LambdaTest')]")).click();
+		System.out.println(downloadPath);
 		File f=new File(downloadPath+"/LambdaTest.txt");
 
 		if(f.exists())
